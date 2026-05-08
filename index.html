@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Mesto</title>
-  <script type="module" crossorigin src="./assets/index-DlnAAeVc.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-D2z4Cjqv.css">
+  <script type="module" crossorigin src="./assets/index-wR5l_B11.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Bv6FCnaa.css">
 </head>
 
 <body class="page">
@@ -39,11 +39,17 @@
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form" name="edit-profile" novalidate>
           <label class="popup__label">
-            <input
+            <input 
               type="text"
               name="user-name"
-              id="user-name" 
-              class="popup__input popup__input_type_name" placeholder="Имя" data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы" minlength="2" maxlength="40" pattern="^[a-zA-Zа-яА-ЯЁё]+([\s\-]?[a-zA-Zа-яА-ЯЁё]+)*$" required />
+              id="user-name"
+              class="popup__input popup__input_type_name"
+              placeholder="Имя"
+              data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+              minlength="2"
+              maxlength="40"
+              pattern="^[a-zA-Zа-яА-ЯЁё]+([\s\-]?[a-zA-Zа-яА-ЯЁё]+)*$"
+              required />
             <span class="popup__error" id="user-name-error"></span>
           </label>
           <label class="popup__label">
@@ -149,7 +155,6 @@
     <li class="places__item card">
       <img class="card__image" src="" alt="" />
       <div class="card__control">
-        <button type="button" class="card__control-button card__control-button_type_info"></button>
         <button type="button" class="card__control-button card__control-button_type_delete"></button>
       </div>
       <div class="card__description">
